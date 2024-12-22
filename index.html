@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Counter</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <h1>Counter</h1>
-    <div class="divider"></div>
+    <div class="head">
+      <div class="temp"></div>
+      <h1>Counter</h1>
+      <div class="github">
+        <a
+          href="https://github.com/gptshubham/dynamic_counter_app_mini_project_js_dom"
+          target="_blank"
+        >
+          <img
+            src="./Assets/images/github-logo.png"
+            alt="github logo"
+            id="logo"
+          />
+        </a>
+      </div>
+    </div>
     <div id="count">0</div>
     <div id="increment_decrement">
-      <div id="decrement">-</div>
-      <div id="increment">+</div>
+      <button id="decrement">-</button>
+      <button id="increment">+</button>
     </div>
     <div id="user_input">
       <label for="inc">Increment/Decrement by:</label>
@@ -27,7 +47,7 @@
       />
     </div>
     <div id="temp">
-      <div id="reset">Reset</div>
+      <button type="reset" id="reset">Reset</button>
     </div>
   </body>
 </html>
