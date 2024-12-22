@@ -87,3 +87,11 @@ h1 {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+#increment:active,
+#decrement:active,
+#reset:active {
+  transform: scale(0.95);
+  background-color: lightblue;
+  transition: transform 0.1s, background-color 0.1s;
+}
